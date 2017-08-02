@@ -171,7 +171,6 @@ class JobCommandController extends CommandController
      */
     public function workCommand($queueName, $timeout = 0, $limit = Worker::LIMIT_QUEUE)
     {
-        $this->outputLine('work...');
         /** @var R3H6\Jobqueue\Job\Worker $worker */
         $worker = $this->objectManager->get(Worker::class);
         $worker->work($queueName, $timeout, $limit);
