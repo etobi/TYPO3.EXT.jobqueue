@@ -33,7 +33,8 @@ return array(
                 'readOnly' => 1,
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,datetime'
+                'eval' => 'trim,datetime',
+                'renderType' => 'inputDateTime'
             ),
         ),
         'queue_name' => array(
